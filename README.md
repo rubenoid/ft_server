@@ -1,6 +1,15 @@
 # ft_server
  This server will run multiples services: Wordpress, phpMyAdmin, and a SQL database.
 
+## How to run
+with autoindexing:
+
+`docker run -it -p 80:80 -p 443:443 [name]`
+
+for autoindexing off, compile with `-e AUTO_INDEX=0`
+
+(Container can only be run in interactive mode)
+
 ## Subject
 - You can’t use docker-compose.
 - You must set up a web server with Nginx, in only one docker container. The
